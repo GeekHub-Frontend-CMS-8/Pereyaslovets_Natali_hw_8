@@ -1,0 +1,11 @@
+.partners {
+  padding: 30px 0 50px 0;
+  ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  li {
+    padding: 15px;
+  }
+}

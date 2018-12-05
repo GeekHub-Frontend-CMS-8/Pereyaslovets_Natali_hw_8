@@ -1,0 +1,685 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: Brandon Grotesque;
+  src: url(../fonts/BrandonGrotesque-Light.ttf); }
+
+@font-face {
+  font-family: Cubano;
+  src: url(../fonts/cubano-regular-webfont.ttf); }
+
+.wrap {
+  width: 300px;
+  margin: 0 auto; }
+
+header {
+  background: url("../img/header-bg.png") no-repeat center top/cover;
+  text-align: center;
+  margin-bottom: 100px; }
+  header a {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 41px; }
+
+h1 {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 66px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.65px;
+  padding-bottom: 70px; }
+
+.header-text {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+  padding-bottom: 40px; }
+
+button {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 20px 70px 25px;
+  border: 2px solid #d4d4d4;
+  border-radius: 5px;
+  margin-bottom: 125px; }
+  button:hover {
+    color: #fff; }
+
+.fa-telegram-plane {
+  color: #d4d4d4;
+  margin-right: 10px;
+  font-size: 25px; }
+
+.esc {
+  color: #d4d4d4;
+  font-family: 'Cubano', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 160px; }
+
+.nav-menu {
+  width: 320px;
+  position: relative;
+  text-align: center;
+  height: 40px; }
+  .nav-menu a {
+    display: block;
+    text-decoration: none;
+    color: #d4d4d4;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 41px;
+    width: 100%;
+    border-top: 1px solid #fff;
+    background-color: #5b4854; }
+
+.topnav {
+  overflow: hidden; }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px; }
+
+.topnav a:hover {
+  background-color: e8e8e8;
+  opacity: 0.5;
+  color: #d4d4d4; }
+
+.active {
+  color: #7690c5; }
+
+.topnav .icon-menu {
+  display: none; }
+
+@media screen and (min-width: 450px) {
+  .wrap {
+    width: 400px;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 480px) {
+  .wrap {
+    width: 450px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+  .topnav a.icon-menu {
+    float: right;
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive .icon-menu {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    width: 730px;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    width: 940px;
+    margin: 0 auto; } }
+
+.list {
+  padding: 30px 0px 50px 0px; }
+  .list p {
+    color: #777777;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+
+h3 {
+  color: #222222;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 10px; }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 20px; }
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 200px; }
+
+.list-text {
+  padding-bottom: 50px; }
+
+@media screen and (min-width: 768px) {
+  .item {
+    flex-basis: 300px; }
+  .list {
+    padding: 100px 0px 95px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+@media screen and (min-width: 1024px) {
+  .item {
+    flex-basis: 375px; }
+  .list {
+    padding: 100px 0px 95px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+
+.brand {
+  background-color: #fafafa;
+  padding-bottom: 95px;
+  padding: 100px 0 95px 0; }
+  .brand p {
+    color: #777777;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 20px; }
+  .brand .content-text {
+    margin-left: 30px; }
+
+@media screen and (min-width: 768px) {
+  .brand .content-text {
+    margin-right: 75px; } }
+
+.content-fl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .content-fl h2 {
+    text-align: left; }
+
+h2 {
+  color: #222222;
+  font-family: 'Brandon Grotesque Light', sans-serif;
+  font-size: 40px;
+  letter-spacing: -1.5px;
+  font-weight: 300;
+  padding-bottom: 35px; }
+  h2 .text-bold {
+    font-family: 'Brandon Grotesque Bold', sans-serif;
+    font-weight: 700; }
+
+.development {
+  padding-bottom: 95px; }
+  .development p {
+    color: #777777;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 20px; }
+  .development .content-text {
+    margin-right: 30px; }
+
+.content-image img {
+  width: 150px; }
+
+@media screen and (min-width: 768px) {
+  .development .content-text {
+    margin-right: 75px; }
+  h2 {
+    font-size: 60px; } }
+
+.team {
+  padding: 30px;
+  background-color: #111;
+  text-align: center; }
+  .team h2 {
+    color: #d4d4d4;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 30px;
+    /*для больших сделать 60*/
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px; }
+  .team .text-bold {
+    font-weight: 700; }
+  .team a {
+    text-decoration: none; }
+
+.text-up {
+  color: #777777;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 22px;
+  font-weight: 400; }
+
+.all-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.text-dw {
+  color: #ebebeb;
+  font-family: 'Brandon Grotesque',sans-serif;
+  font-size: 20px;
+  font-weight: 400; }
+
+.eclipce-img {
+  width: 120px;
+  height: 120px;
+  border: 7px solid #d4d4d4;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-bottom: 25px; }
+
+h4 {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 25px; }
+
+.prof {
+  color: #ebebeb;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px; }
+
+.team-u {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .team-u ul, .team-u li {
+    display: inline-block; }
+
+.user-social .fa-twitter {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center; }
+  .user-social .fa-twitter:hover {
+    background-color: #00aced;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aced;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center; }
+
+.user-social .fa-facebook-f {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center; }
+  .user-social .fa-facebook-f:hover {
+    background-color: #3b5998;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #3b5998;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center; }
+
+.user-social .fa-google-plus-g {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center; }
+  .user-social .fa-google-plus-g:hover {
+    background-color: #cb2028;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #cb2028;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .all-team {
+    flex-direction: row; } }
+
+@media screen and (min-width: 1024px) {
+  .eclipce-img {
+    width: 220px;
+    height: 220px; } }
+
+.comments {
+  background-color: #fafafa;
+  padding: 100px 0px; }
+
+h2 {
+  text-align: center; }
+
+.comm-1 {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8e8e8; }
+
+.comm-1:after, .comm-1:before {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.comm-1:after {
+  border-right-color: #ffffff;
+  border-width: 18px;
+  top: 50%;
+  margin-top: -18px; }
+
+.comm-1:before {
+  border-right-color: #e8e8e8;
+  border-width: 19px;
+  top: 50%;
+  margin-top: -19px; }
+
+.comm-1, .comm-2 {
+  max-width: 280px;
+  padding: 20px; }
+
+.comm-1 {
+  margin-left: 25px; }
+
+.comm-2 {
+  margin-right: 25px; }
+
+.comm-text {
+  color: #777777;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px; }
+
+.comm-2 {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8e8e8; }
+
+.comm-2:after, .comm-2:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none; }
+
+.comm-2:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 18px;
+  top: 50%;
+  margin-top: -18px; }
+
+.comm-2:before {
+  border-color: rgba(125, 145, 133, 0);
+  border-left-color: #e8e8e8;
+  border-width: 19px;
+  top: 50%;
+  margin-top: -19px; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #111111; }
+
+.comm-p {
+  text-align: center;
+  padding-bottom: 45px;
+  color: #777777;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 22px;
+  font-weight: 400; }
+
+.autor {
+  color: #7690c5;
+  font-family: 'Brandon Grotesque',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.comment-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 480px) {
+  .comm-1, .comm-2 {
+    max-width: 300px;
+    padding: 40px; } }
+
+@media screen and (min-width: 768px) {
+  .comm-1, .comm-2 {
+    max-width: 600px;
+    padding: 40px; }
+  .circle {
+    width: 220px;
+    height: 220px; } }
+
+@media screen and (min-width: 1024px) {
+  .comm-1, .comm-2 {
+    max-width: 660px;
+    padding: 40px; }
+  .circle {
+    width: 220px;
+    height: 220px; } }
+
+.partners {
+  padding: 30px 0 50px 0; }
+  .partners ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .partners li {
+    padding: 15px; }
+
+footer {
+  background-color: #7690c5;
+  padding: 30px 0px; }
+  footer h2 {
+    color: #d4d4d4;
+    font-family: 'Brandon Grotesque',sans-serif;
+    font-size: 30px;
+    /*для больших экранов сделать 60пх*/
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: left; }
+  footer .text-bold {
+    font-weight: 700; }
+  footer ul {
+    line-height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; }
+  footer li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-basis: 145px; }
+
+.form {
+  max-width: 300px;
+  margin: 0 auto; }
+
+.footer-text {
+  margin-bottom: 50px; }
+
+.form {
+  max-width: 450px;
+  margin: 0 auto; }
+
+.social {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 400; }
+
+.copyright {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 30px; }
+
+.user, .user-mail, .message {
+  width: 100%;
+  color: #bbbbbb;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  /*20 для больших */
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  background-color: #d4d4d4; }
+
+textarea {
+  height: 160px;
+  border: 1px solid #cccccc;
+  background-color: #d4d4d4; }
+
+.fa {
+  width: 15px;
+  text-align: center;
+  padding-right: 30px; }
+
+.footer-text {
+  margin-bottom: 30px; }
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+
+@media screen and (min-width: 768px) {
+  footer h2 {
+    font-size: 60px; }
+  footer li {
+    flex-basis: 230px; }
+  footer .footer-text {
+    margin-bottom: 50px; }
+  footer .form {
+    max-width: 450px;
+    margin: 0 auto; }
+  footer .footer-upper {
+    flex-direction: row; } }
+
+@media screen and (min-width: 1024px) {
+  footer li {
+    flex-basis: 230px; } }

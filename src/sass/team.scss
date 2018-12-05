@@ -1,0 +1,159 @@
+.team {
+  padding: 30px;
+  background-color: #111;
+  text-align: center;
+  h2 {
+    color: #d4d4d4;
+    font-family: 'Brandon Grotesque', sans-serif;
+    font-size: 30px; /*для больших сделать 60*/
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .text-bold {
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.text-up {
+  color: #777777;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.all-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-dw {
+  color: #ebebeb;
+  font-family: 'Brandon Grotesque',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.eclipce-img {
+  width: 120px;
+  height: 120px;
+  border: 7px solid #d4d4d4;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+h4 {
+  color: #d4d4d4;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+.prof {
+  color: #ebebeb;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.team-u {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  ul, li {
+    display: inline-block;
+  }
+}
+
+.user-social .fa-twitter {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  &:hover {
+    background-color: #00aced;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aced;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.user-social .fa-facebook-f {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  &:hover {
+    background-color: #3b5998;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #3b5998;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+.user-social .fa-google-plus-g {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  &:hover {
+    background-color: #cb2028;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #cb2028;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .all-team {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .eclipce-img {
+    width: 220px;
+    height: 220px;
+  }
+}
