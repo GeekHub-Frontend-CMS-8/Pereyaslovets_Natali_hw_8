@@ -279,6 +279,8 @@ h3 {
   align-items: center; }
   .content-fl h2 {
     text-align: left; }
+  .content-fl img {
+    width: 30px; }
 
 h2 {
   color: #222222;
@@ -296,24 +298,35 @@ h2 {
   .development p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     padding-bottom: 20px; }
   .development .content-text {
     margin-right: 30px; }
 
-.content-image img {
-  width: 150px; }
-
-@media screen and (min-width: 768px) {
+@media (min-width: 400px) {
   .development .content-text {
     margin-right: 75px; }
+  .development p {
+    font-size: 18px; }
   h2 {
-    font-size: 60px; } }
+    font-size: 60px; }
+  .content-fl img {
+    width: 70px; } }
+
+@media (min-width: 768px) {
+  .development .content-text {
+    margin-right: 75px; }
+  .development p {
+    font-size: 18px; }
+  h2 {
+    font-size: 60px; }
+  .content-fl img {
+    width: 220px; } }
 
 .team {
-  padding: 30px;
+  padding: 30px 0;
   background-color: #111;
   text-align: center; }
   .team h2 {
@@ -332,7 +345,7 @@ h2 {
 .text-up {
   color: #777777;
   font-family: 'Brandon Grotesque', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400; }
 
 .all-team {
@@ -343,12 +356,12 @@ h2 {
 .text-dw {
   color: #ebebeb;
   font-family: 'Brandon Grotesque',sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400; }
 
 .eclipce-img {
-  width: 120px;
-  height: 120px;
+  width: 190px;
+  height: 190px;
   border: 7px solid #d4d4d4;
   border-radius: 50%;
   margin: 0 auto;
@@ -374,7 +387,9 @@ h4 {
   justify-content: center;
   flex-direction: column; }
   .team-u ul, .team-u li {
-    display: inline-block; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
 
 .user-social .fa-twitter {
   display: block;
@@ -397,6 +412,8 @@ h4 {
     font-size: 20px;
     line-height: 40px;
     text-align: center; }
+  .user-social .fa-twitter a {
+    margin: 5px; }
 
 .user-social .fa-facebook-f {
   display: block;
@@ -444,12 +461,20 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .all-team {
-    flex-direction: row; } }
+    flex-direction: row; }
+  .text-dw {
+    font-size: 20px; }
+  .text-up {
+    font-size: 22px; } }
 
 @media screen and (min-width: 1024px) {
   .eclipce-img {
     width: 220px;
-    height: 220px; } }
+    height: 220px; }
+  .text-dw {
+    font-size: 20px; }
+  .text-up {
+    font-size: 22px; } }
 
 .comments {
   background-color: #fafafa;
@@ -647,11 +672,6 @@ textarea {
   border: 1px solid #cccccc;
   background-color: #d4d4d4; }
 
-.fa {
-  width: 15px;
-  text-align: center;
-  margin-right: 30px; }
-
 .footer-text {
   margin-bottom: 30px; }
 
@@ -669,10 +689,10 @@ textarea {
       border: 1px solid #cccccc; }
     .footer-upper form form input {
       margin-bottom: 30px; }
-
-@media screen and (min-width: 768px) {
-  footer .footer-upper {
-    flex-direction: row; } }
+  .footer-upper .fa {
+    width: 15px;
+    text-align: center;
+    margin-right: 30px; }
 
 @media (min-width: 500px) {
   footer form {
@@ -682,15 +702,20 @@ textarea {
   footer .footer-text {
     margin-bottom: 50px; } }
 
-@media (min-width: 940px) {
+@media screen and (min-width: 768px) {
+  footer .footer-upper {
+    flex-direction: row; } }
+
+@media (min-width: 800px) {
   footer {
     padding: 30px 0;
     flex-direction: row;
     justify-content: space-between; }
   ul {
     margin: 0; }
-  ul li {
-    margin-bottom: 40px; } }
+  li {
+    margin-bottom: 40px;
+    width: 50%; } }
 
 @media (min-width: 970px) {
   .wrap {
