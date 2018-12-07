@@ -24,7 +24,7 @@ h2 {
 }
 
 .development {
-  padding-bottom: 95px;
+  padding: 45px 0;
   p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
@@ -40,6 +40,7 @@ h2 {
 
 @media (min-width: 400px)  {
   .development {
+    padding: 100px 0 95px 0;
     .content-text {
       margin-right: 75px;
     }
@@ -59,6 +60,7 @@ h2 {
 
 @media (min-width: 768px)  {
   .development {
+    padding: 100px 0 95px 0;
     .content-text {
       margin-right: 75px;
     }

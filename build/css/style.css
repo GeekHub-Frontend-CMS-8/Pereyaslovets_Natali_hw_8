@@ -67,7 +67,7 @@ table {
 header {
   background: url("../img/header-bg.png") no-repeat center top/cover;
   text-align: center;
-  margin-bottom: 100px; }
+  padding: 70px 0 100px 0; }
   header a {
     text-decoration: none;
     color: #d4d4d4;
@@ -257,7 +257,7 @@ h3 {
 
 .brand {
   background-color: #fafafa;
-  padding: 100px 0 95px 0; }
+  padding: 45px 0; }
   .brand p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
@@ -269,8 +269,10 @@ h3 {
     margin-left: 30px; }
 
 @media screen and (min-width: 768px) {
-  .brand .content-text {
-    margin-right: 75px; } }
+  .brand {
+    padding: 100px 0 95px 0; }
+    .brand .content-text {
+      margin-right: 75px; } }
 
 .content-fl {
   display: flex;
@@ -293,7 +295,7 @@ h2 {
     font-weight: 700; }
 
 .development {
-  padding-bottom: 95px; }
+  padding: 45px 0; }
   .development p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
@@ -305,20 +307,24 @@ h2 {
     margin-right: 30px; }
 
 @media (min-width: 400px) {
-  .development .content-text {
-    margin-right: 75px; }
-  .development p {
-    font-size: 18px; }
+  .development {
+    padding: 100px 0 95px 0; }
+    .development .content-text {
+      margin-right: 75px; }
+    .development p {
+      font-size: 18px; }
   h2 {
     font-size: 60px; }
   .content-fl img {
     width: 70px; } }
 
 @media (min-width: 768px) {
-  .development .content-text {
-    margin-right: 75px; }
-  .development p {
-    font-size: 18px; }
+  .development {
+    padding: 100px 0 95px 0; }
+    .development .content-text {
+      margin-right: 75px; }
+    .development p {
+      font-size: 18px; }
   h2 {
     font-size: 60px; }
   .content-fl img {

@@ -1,6 +1,6 @@
 .brand {
   background-color: #fafafa;
-  padding: 100px 0 95px 0;
+  padding: 45px 0;
   p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
@@ -16,6 +16,7 @@
 
 @media screen and (min-width: 768px)  {
   .brand {
+    padding: 100px 0 95px 0;
     .content-text {
       margin-right: 75px;
     }
