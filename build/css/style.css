@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -105,7 +104,9 @@ button {
   border-radius: 5px;
   margin-bottom: 125px; }
   button:hover {
-    color: #fff; }
+    background-color: #fff;
+    color: #7690c5;
+    transition: all .5s; }
 
 .fa-telegram-plane {
   color: #d4d4d4;
@@ -155,7 +156,6 @@ button {
   font-size: 17px; }
 
 .topnav a:hover {
-  background-color: e8e8e8;
   opacity: 0.5;
   color: #d4d4d4; }
 
@@ -205,7 +205,7 @@ button {
     margin: 0 auto; } }
 
 .list {
-  padding: 30px 0px 50px 0px; }
+  padding: 30px 0 50px 0; }
   .list p {
     color: #777777;
     font-family: 'Brandon Grotesque', sans-serif;
@@ -241,7 +241,7 @@ h3 {
   .item {
     flex-basis: 300px; }
   .list {
-    padding: 100px 0px 95px 0px;
+    padding: 100px 0 95px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; } }
@@ -250,14 +250,13 @@ h3 {
   .item {
     flex-basis: 375px; }
   .list {
-    padding: 100px 0px 95px 0px;
+    padding: 100px 0 95px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; } }
 
 .brand {
   background-color: #fafafa;
-  padding-bottom: 95px;
   padding: 100px 0 95px 0; }
   .brand p {
     color: #777777;
@@ -333,7 +332,6 @@ h2 {
     color: #d4d4d4;
     font-family: 'Brandon Grotesque', sans-serif;
     font-size: 30px;
-    /*для больших сделать 60*/
     font-weight: 300;
     text-align: center;
     padding-bottom: 5px; }
@@ -389,7 +387,7 @@ h4 {
   .team-u ul, .team-u li {
     display: flex;
     flex-direction: row;
-    justify-content: center; }
+    justify-content: space-around; }
 
 .user-social .fa-twitter {
   display: block;
@@ -588,7 +586,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .comments {
-    padding: 100px 0px; }
+    padding: 100px 0; }
   .comm-1, .comm-2 {
     max-width: 600px;
     padding: 40px; }
@@ -598,7 +596,7 @@ h2 {
 
 @media screen and (min-width: 1024px) {
   .comments {
-    padding: 100px 0px; }
+    padding: 100px 0; }
   .comm-1, .comm-2 {
     max-width: 660px;
     padding: 40px; }
@@ -607,25 +605,31 @@ h2 {
     height: 220px; } }
 
 .partners {
-  padding: 30px 0 50px 0; }
+  padding: 30px 0; }
   .partners ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
   .partners li {
     padding: 15px; }
+  .partners a:hover {
+    -webkit-filter: opacity(30%); }
 
 @media screen and (min-width: 768px) {
-  .partners ul {
-    flex-wrap: nowrap; } }
+  .partners {
+    padding: 60px 0; }
+    .partners ul {
+      flex-wrap: nowrap; } }
 
 @media screen and (min-width: 970px) {
-  .partners ul {
-    flex-wrap: nowrap; } }
+  .partners {
+    padding: 60px 0; }
+    .partners ul {
+      flex-wrap: nowrap; } }
 
 footer {
   background-color: #7690c5;
-  padding: 30px 0px; }
+  padding: 30px 0; }
   footer h2 {
     color: #d4d4d4;
     font-family: 'Brandon Grotesque',sans-serif;
@@ -641,7 +645,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-  footer li {
+  footer .footer-list {
     display: flex;
     align-items: center;
     margin-bottom: 20px; }
@@ -723,7 +727,7 @@ textarea {
     justify-content: space-between; }
   ul {
     margin: 0; }
-  li {
+  .footer-list {
     margin-bottom: 40px;
     width: 50%; } }
 

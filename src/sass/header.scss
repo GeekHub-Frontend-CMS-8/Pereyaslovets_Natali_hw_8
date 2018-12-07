@@ -61,7 +61,9 @@ button {
   border-radius: 5px;
   margin-bottom: 125px;
   &:hover {
-    color: #fff;
+    background-color: #fff;
+    color: #7690c5;
+    transition: all .5s;
   }
 }
 
@@ -120,7 +122,6 @@ button {
 }
 
 .topnav a:hover {
-  background-color: e8e8e8;
   opacity: 0.5;
   color: #d4d4d4;
 }

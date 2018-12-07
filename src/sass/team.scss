@@ -5,7 +5,7 @@
   h2 {
     color: #d4d4d4;
     font-family: 'Brandon Grotesque', sans-serif;
-    font-size: 30px; /*для больших сделать 60*/
+    font-size: 30px;
     font-weight: 300;
     text-align: center;
     padding-bottom: 5px;
@@ -71,7 +71,7 @@ h4 {
   ul, li {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 

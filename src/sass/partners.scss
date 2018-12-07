@@ -1,5 +1,5 @@
 .partners {
-  padding: 30px 0 50px 0;
+  padding: 30px 0;
   ul {
       display: flex;
       flex-wrap: wrap;
@@ -8,10 +8,14 @@
   li {
     padding: 15px;
   }
+  a:hover {
+    -webkit-filter: opacity(30%);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .partners {
+    padding: 60px 0;
     ul {
       flex-wrap: nowrap;
     }
@@ -20,6 +24,7 @@
 
   @media screen and (min-width: 970px) {
     .partners {
+      padding: 60px 0;
       ul {
         flex-wrap: nowrap;
       }

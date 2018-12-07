@@ -1,6 +1,6 @@
 footer {
   background-color: #7690c5;
-  padding: 30px 0px;
+  padding: 30px 0;
   h2 {
     color: #d4d4d4;
     font-family: 'Brandon Grotesque',sans-serif;
@@ -19,7 +19,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  li {
+  .footer-list {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -126,7 +126,7 @@ textarea {
     ul {
       margin: 0;
     }
-    li {
+    .footer-list {
       margin-bottom: 40px;
       width: 50%;
     }
