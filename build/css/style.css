@@ -62,7 +62,7 @@ table {
   src: url(../fonts/cubano-regular-webfont.ttf); }
 
 .wrap {
-  width: 300px;
+  width: 310px;
   margin: 0 auto; }
 
 @media screen and (min-width: 450px) {
@@ -645,8 +645,11 @@ footer {
   footer .footer-list {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    width: 50%; }
+    margin-bottom: 20px; }
+
+@media (min-width: 500px) {
+  .footer-list {
+    width: 50%; } }
 
 .footer-text {
   margin-bottom: 50px; }

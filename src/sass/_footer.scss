@@ -24,6 +24,11 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  .footer-list {
     width: 50%;
   }
 }
