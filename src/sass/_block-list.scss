@@ -1,0 +1,68 @@
+$font-stack: 'Brandon Grotesque',sans-serif;
+
+.list {
+  padding: 30px 0 50px 0;
+  p {
+    color: #777777;
+    font: 18px $font-stack;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .list {
+    padding: 100px 0 95px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .list {
+    padding: 100px 0 95px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+h3 {
+  color: #222222;
+  font: 22px $font-stack;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 200px;
+}
+
+@media screen and (min-width: 768px)  {
+  .item {
+    flex-basis: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .item {
+    flex-basis: 375px;
+  }
+}
+
+.list-text {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,167 @@
+$font-stack: 'Brandon Grotesque',sans-serif;
+.comments {
+  background-color: #fafafa;
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .comments {
+    padding: 100px 0;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.comm-description-right {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+}
+
+.comm-description-right:after, .comm-description-right:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.comm-description-right:after {
+    border-right-color: #ffffff;
+    border-width: 18px;
+    top: 50%;
+    margin-top: -18px;
+}
+
+.comm-description-right:before {
+    border-right-color: #e8e8e8;
+    border-width: 19px;
+    top: 50%;
+    margin-top: -19px;
+}
+
+.comm-description-right, .comm-description-left{
+    max-width: 280px;
+    padding: 20px;
+}
+
+.comm-description-right {
+    margin-left: 25px;
+  }
+.comm-description-left {
+    margin-right: 25px;
+}
+
+@media screen and (min-width: 480px)  {
+  .comm-description-right, .comm-description-left{
+    max-width: 300px;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .comm-description-right, .comm-description-left{
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  .comm-description-right, .comm-description-left {
+    max-width: 660px;
+  }
+}
+
+.comm-text {
+  color: #777777;
+  font: 26px $font-stack;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.comm-description-left {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+}
+
+.comm-description-left:after, .comm-description-left:before {
+  left: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.comm-description-left:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+  border-width: 18px;
+  top: 50%;
+  margin-top: -18px;
+}
+
+.comm-description-left:before {
+  border-color: rgba(125, 145, 133, 0);
+  border-left-color: #e8e8e8;
+  border-width: 19px;
+  top: 50%;
+  margin-top: -19px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111111;
+}
+
+/*Сделаю в % обязательно, пока не победила.*/
+@media screen and (min-width: 400px)  {
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 500px)  {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  .circle {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.comm-p {
+  text-align: center;
+  padding-bottom: 45px;
+  color: #777777;
+  font: 22px $font-stack;
+  font-weight: 400;
+}
+
+.autor {
+  color: #7690c5;
+  font: 20px $font-stack;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.comment-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+

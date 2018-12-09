@@ -1,0 +1,133 @@
+$font-stack: 'Brandon Grotesque',sans-serif;
+
+footer {
+  background-color: #7690c5;
+  padding: 30px 0;
+  h2 {
+    color: #d4d4d4;
+    font: 30px $font-stack;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  .text-bold {
+    font-weight: 700;
+  }
+  ul {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .footer-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}
+
+.footer-text {
+  margin-bottom: 50px;
+}
+
+.social {
+  max-width: 460px;
+  margin: 0 auto 20px;
+  color: #d4d4d4;
+  font: 18px $font-stack;
+  font-weight: 400;
+}
+
+.copyright {
+  color: #d4d4d4;
+  font: 16px $font-stack;
+  font-weight: 500;
+  text-align: center;
+  border-top: 1px solid;
+  padding-top: 30px;
+}
+
+.user, .user-mail, .message {
+  width: 100%;
+  color: #bbbbbb;
+  font: 18px $font-stack;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  background-color: #d4d4d4;
+}
+
+textarea {
+  height: 160px;
+  border: 1px solid #cccccc;
+  background-color: #d4d4d4;
+}
+
+.footer-text {
+  margin-bottom: 30px;
+}
+
+.footer-upper {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+      padding: 15px 20px;
+      border: 1px solid #cccccc;
+    }
+    form input {
+      margin-bottom: 30px;
+    }
+  }
+  .fa {
+    width: 15px;
+    text-align: center;
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: 500px) {
+  footer {
+    h2 {
+      font-size: 60px;
+    }
+    .footer-text {
+      margin-bottom: 50px;
+    }
+    ul {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    margin-bottom: 40px;
+  }
+  .footer-upper {
+    flex-direction: row;
+    form {
+      width: 340px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+    ul {
+      margin: 0;
+    }
+  }
+
+@media (min-width: 970px) {
+  .wrap {
+    padding: 0;
+  }
+}
